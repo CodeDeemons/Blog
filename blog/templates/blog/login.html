@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-md-6 offset-3 my-5 py-5">
+<h3 class="text-light text-center py-3 my-4">Login to Explore More </h3>
+    <form action="" method="POST" novalidate class="jumbo-color my-4 py-4 rounded">
+    <h3 class="text-warning p-3 text-center">Login Page</h3>
+        {% csrf_token %}
+            {% for fm in form %}
+                <div class="form-group col-sm-6 offset-3">    
+                    {{ fm.label_tag }} {{fm}} <small class="text-danger"> {{fm.errors|striptags}} </small>
+                </div>
+            {% endfor %}
+            <div class="text-center">
+                <input type="submit" class="btn btn-primary" value="login">
+            </div>
+            {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                    <p class="alert alert-danger my-3"> {{error}} </p>
+                {% endfor %}
+            {% endif %}
+    </form>
+</div>
+
+{% endblock content %}

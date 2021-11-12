@@ -1,0 +1,37 @@
+body{
+    background: url("../../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: antiquewhite;
+}
+
+.jumbo-color{
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: 10px;
+}
+
+textarea{
+    border-radius: 10px;
+}
+
+table.scrolldown tbody {
+              
+    /* Set the height of table body */
+    height: 250px; 
+      
+    /* Set vertical scroll */
+    overflow-y: scroll;
+}
+
+hr{
+    background-color: aliceblue;
+}
+
+.launch:hover, .design:hover, .code:hover{
+    background-color: aliceblue;
+}
+
+.featurette img{
+    opacity: 0.7;
+}

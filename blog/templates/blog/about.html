@@ -1,0 +1,85 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<main role="main">
+    <div class="container marketing text-center jumbo-color mt-4 p-4 rounded">
+        <h2 class="text-center display-4 pt-2 pb-4">About Us</h2>
+        <hr>
+        <div class="row">
+            <div class="col-lg-4 border-right border-light">
+                <img class="rounded border border-info m-2 p-4 code"
+                    src="../../static/images/code.png"
+                    alt="Generic placeholder image" width="140" height="140">
+                <h2 class="text-info">Code</h2>
+                <p class="text-justify text-light">coding is used for communicating with computers. People use coding to give computers and other machines instructions on what actions to perform. Further, we use it to program the websites, apps, and other technologies we interact with every day</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="rounded  border border-info m-2 p-4 design"
+                    src="../../static/images/design.png"
+                    alt="Generic placeholder image" width="140" height="140">
+                <h2 class="text-info">Design</h2>
+                <p class="text-justify text-light">A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process of developing a design.</p>
+            </div>
+            <div class="col-lg-4 border-left border-light">
+                <img class="rounded  border border-info m-2 p-4 launch"
+                    src="../../static/images/launch.png"
+                    alt="Generic placeholder image" width="140" height="140">
+                <h2 class="text-info">Launch</h2>
+                <p class="text-justify text-light">If you work on the web, you know that the launch of a new web application is a complicated, challenging and exciting process. Every day we see new projects come to life during the first steps in the development process into live HTML code.</p>
+            </div>
+        </div>
+
+
+        <!-- START THE Divider -->
+
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading mt-5 pt-5">Good Code is it's own <br> <span class="text-muted">Best Documentation</span></h2>
+                <p class="lead pt-4">Code that you wrote 6 months ago is often indistinguishable from code that someone else has written. You will look upon a file with a fond sense of remembrance. Then a sneaking feeling of foreboding, knowing that someone less experienced, less wise, had written it.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto rounded" data-src="holder.js/500x500/auto" alt="500x500"
+                    style="width: 500px; height: 500px;"
+                    src="../../static/images/img1.jpg"
+                    data-holder-rendered="true">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading mt-5 pt-5">The best way to predict the design <br> <span class="text-muted">is to Create it.</span></h2>
+                <p class="lead pt-4">Image result for design short note
+                    A design is a plan or specification for the construction of an object or system or for the implementation of an activity or process, or the result of that plan or specification in the form of a prototype, product or process. The verb to design expresses the process of developing a design.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img class="featurette-image img-fluid mx-auto rounded" data-src="holder.js/500x500/auto" alt="500x500"
+                    src="../../static/images/img2.jpg"
+                    data-holder-rendered="true" style="width: 500px; height: 500px;">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading mt-5 pt-5">Think it.. Dream it.. Create it.. <br> <span class="text-muted">Launch it..</span></h2>
+                <p class="lead pt-4">If you work on the web, you know that the launch of a new web application is a complicated, challenging and exciting process. Every day we see new projects come to life during the first steps in the development process, when you turn your photoshop comps into live HTML code. </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto rounded" data-src="holder.js/500x500/auto" alt="500x500"
+                    src="../../static/images/img3.jpg"
+                    data-holder-rendered="true" style="width: 500px; height: 500px;">
+            </div>
+        </div>
+
+        <!-- /END THE Divider -->
+
+    </div>
+</main>
+
+{% endblock content %}

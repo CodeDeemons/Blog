@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-sm-10">
+
+    <!-- form -->
+    <form class="needs-validation jumbo-color rounded my-5 p-4" novalidate>
+      <h3 class="text-warning mt-2 mb-4 py-3">Contact Us</h3>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom01">First name</label>
+            <input type="text" class="form-control" placeholder="First name" value="Diwakar" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationCustom02">Last name</label>
+            <input type="text" class="form-control" placeholder="Last name" value="Jha" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="contact">Contact Info</label>
+            <div class="input-group">
+              <input type="number" class="form-control" placeholder="Contact Info" required>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationCustom03">City</label>
+            <input type="text" class="form-control" placeholder="City" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationCustom04">State</label>
+            <input type="text" class="form-control" placeholder="State" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="pincode">Pin</label>
+            <input type="text" class="form-control" placeholder="Pin" required>
+          </div>
+        </div>
+
+        <div class="col-md-12 mb-3 p-0 form-group">
+            Enter Message <br>
+            <textarea  name="message" class="form-control" rows="5" cols="100" placeholder="Type Your Message Here.."></textarea>
+        </div>
+
+        <div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+    <!-- end of form -->
+
+</div>
+
+{% endblock content %}
